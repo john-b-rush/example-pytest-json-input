@@ -1,0 +1,15 @@
+[
+    {
+        "input": "John",
+        "output": "Hi John!"
+    },
+    {
+        "input": "jbr",
+        "output": "Hi jbr!"
+    },
+    {
+        "input": "Zachariah",
+        "output": "Hello Zachariah, you've got a very long name!"
+    }
+]
+
