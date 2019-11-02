@@ -8,12 +8,19 @@ Sometimes the standard decorator technique starts to get unwieldy:
 
 @pytest.mark.parametrize(
     "test_input,expected",
-    [("3+5", 8), ("10-2", 8), ("100/10", 10), ("2+4", 6), ("6*9", 42)],
+    [
+        ("3+5", 8),
+        ("1+1", 2),
+        ("2*6", 12),
+        ("10-2", 8),
+        ("100/10", 10),
+        ("2+4", 6),
+        ("6*9", 42),
+    ],
 )
 def test_eval(test_input, expected):
     assert eval(test_input) == expected
 ```
-
 
 By using json files for tests cases you can keep unit test *code* simple and small. Test code is almost as important at the 'actual' code, so it's critical to keep test code understandable. 
 
